@@ -1,0 +1,74 @@
+body{
+	background-color: darkslategrey;
+	color: aliceblue;
+	font-family: monospace;
+}
+|
+
+h3{
+	padding: 20px;
+	text-align: center;
+}
+
+.publicacion{
+	padding: 30px;
+	max-width: 700px;
+	margin: 20px auto;
+	box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+	opacity: 1;
+	animation: aparecer 1s forwards 0.5s;
+}
+
+.autor{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.autor h3{
+	padding-right: 5px;
+	border-right: 2px solid #FFF;
+	padding: 0;
+	text-align: left;
+	display: block;
+}
+
+.contenido{
+	padding-bottom: 20px;
+	font-size: 18px;
+	margin-bottom: 40px;
+	border-bottom: 1px dashed lightcyan;
+}
+
+.comentario{
+	width: 100%;
+	background-color: transparent;
+	outline: none;
+	border: none;
+	border-bottom: 1px solid #999;
+	margin-bottom: 15px;
+	color: #FFF;
+	font-size: 15px;
+}
+
+.comentario::placeholder{
+	color: aliceblue;
+	font-style: italic;
+}
+
+.btnenviar{
+	border: none;
+	border-bottom: 1px solid;
+	padding: 2px 6px;
+	background-color: transparent;
+	color: aliceblue;
+}
+
+@keyframes aparecer {
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+
+}
